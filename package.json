@@ -1,0 +1,25 @@
+{
+    "name": "idgs-designer-profile-scraper",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Apify Actor that discovers The Expert designer profiles and extracts profile metadata.",
+    "dependencies": {
+        "apify": "^3.7.0",
+        "@crawlee/playwright": "^3.15.3",
+        "playwright": "1.61.1"
+    },
+    "devDependencies": {
+        "@apify/eslint-config": "^2.0.0",
+        "eslint": "^9.29.0",
+        "eslint-config-prettier": "^10.1.5",
+        "prettier": "^3.5.3"
+    },
+    "scripts": {
+        "start": "node src/main.js",
+        "format": "prettier --write .",
+        "lint": "eslint",
+        "postinstall": "npx crawlee install-playwright-browsers"
+    },
+    "author": "Interior Design Genome Project",
+    "license": "ISC"
+}
